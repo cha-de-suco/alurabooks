@@ -1,0 +1,12 @@
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background: var(--branco);
+    padding: 1.25em;
+}
+
+.rodape__copy {
+    color: var(--azul);
+}

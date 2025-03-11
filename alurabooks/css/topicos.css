@@ -1,12 +1,12 @@
 .topicos {
     background: var(--azul-degrade);
     padding: 1em;
+    text-align: center;
 }
 
 .topicos__titulo {
-    text-align: center;
     color: var(--branco);
-    font-weight: lighter;
+    font-weight: 300;
     text-transform: uppercase;
     margin: 0.5em  0  1.25em  0;
 }

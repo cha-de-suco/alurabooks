@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <title>Alura Books</title>
@@ -40,12 +41,51 @@
                 </li>
             </ul>
             <img src="./svg/Logo.svg" alt="logo da alura books" class="container__imagem">
+            <h1 class="cabecalho__titulo"><b class="cabecalho__titulo--negrito">Alura</b>books</h1>
         </div>
 
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+            <label for="opcoes-menu">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Busines</a>
+                </li>
+                
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design e UX</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link ">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="./svg/Favoritos.svg" class="container__imagem" alt="favoritos"></a>
-            <a href="#"><img src="./svg/Compras.svg" class="container__imagem" alt="sacola"></a>
-            <a href="#"><img src="./svg/Usuario.svg" class="container__imagem" alt="Usuario"></a>
+            <a href="#"><img src="./svg/Favoritos.svg" class="container__imagem  container__imagem--transparente" alt="favoritos"></a>
+            <a href="#" class="container__link">
+                <img src="./svg/Compras.svg" class="container__imagem" alt="sacola">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="./svg/Usuario.svg" class="container__imagem" alt="Usuario">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
     </header>
 
@@ -105,7 +145,7 @@
     </section>
 
     <section class="mais-vendidos">
-        <h2 class="mais-vendidos__titulo">MAIS VENDIDOS</h2>
+        <h2 class="carrosel__titulo">MAIS VENDIDOS</h2>
 
         <div class="swiper">
             <div class="swiper-pagination"></div>
@@ -127,27 +167,24 @@
           
           </div>
 
-          <div class="autora">
-            <div class="autora__descricao">
+          <div class="card">
+            <div class="card__descricao">
                 <div class="descricao">
                     <img src="./svg/Estrelinhas.svg" alt="estrelinhas svg">
-                    <h3 class="autora-destaque">Autora do mês</h3>
-                    <h2 class="autora-nome">Juliana Agarikov</h2>
-                    <p class="autora-texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                    <h3 class="descricao__titulo">Autora do mês</h3>
+                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
                 </div>
-                <img src="./svg/Escritora.svg" alt="escritora img">
+                <img src="./svg/Escritora.svg" alt="escritora img" class="descricao__imagem">
             </div>
-
             <div class="card__botoes">
-                <!--primeira coluna-->
                 <ul class="botoes">
                     <li class="botoes__item"><img src="./svg/Favoritos.svg" alt="favoritas livros"></li>
                     <li class="botoes__item"><img src="./svg/Compras.svg" alt="adicionar na sacola"></li>
                 </ul>
-                <!--2 coluna-->
                 <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
-          </div>
+        </div>
     </section>
 
     <section class="topicos">
@@ -188,8 +225,10 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
     </section>
     <hr/>
